@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dark mode </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode : 'class'
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-white">
+
+<div class="container m-auto mt-10 bg-slate-300 rounded-md p-6
+dark:bg-slate-800
+">
+    <p class="text-slate-900 dark:text-slate-100 m-2 text-lg text-center">
+
+        Hello World !
+
+    </p>
+
+</div>
+
+<div class="pt-6 max-w-full flex justify-center">
+    <input aria-label="dark mode" type="checkbox" id="toggle" class="w-6 h-6 rounded-full bg-yellow-300 cursor-pointer"/>
+    <span class="ml-2">Dark Mode</span>
+</div>
+
+<script>
+    document.getElementById('toggle').addEventListener("change" , function (){
+        if(this.checked){
+            document.documentElement.classList.add('dark')
+        }else {
+            document.documentElement.classList.remove('dark')
+
+        }
+    })
+</script>
+</body>
+</html>

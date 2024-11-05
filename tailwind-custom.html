@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind - custom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme : {
+               extend :{
+                   colors : {
+                       primary : '#ea1e1e'
+                   }
+               }
+            }
+        }
+    </script>
+</head>
+<body>
+<p class="text-2xl text-primary"> Hello World !</p>
+</body>
+</html>

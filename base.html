@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind</title>
+</head>
+<body class="bg-slate-900 text-white">
+
+
+<p class="text-green-300">Hello World!</p>
+<p class="text-blue-300">Hello World!</p>
+<p class="text-[#bbbbbb]">Hello World custom color!</p>
+
+<div class="border-2 border-yellow-800">
+    <p>Hello World border!</p>
+</div>
+
+<div class="container mx-auto bg-green-300 text-green-800 m-4 p-4 border-2 text-center underline line-through">
+    <p class="">Hello World container!</p>
+</div>
+
+<p class="text-base mt-10 font-light tracking-wide text-right">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p class="text-center normalcase lowercase uppercase capitalize">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-1/2 mx-auto">
+    <p>Hello World 50%!</p>
+</div>
+
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-24 mx-auto">
+    <p>Hello World 24</p>
+</div>
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-32 mx-auto">
+    <p>Hello World 32</p>
+</div>
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-48 mx-auto">
+    <p>Hello World 48</p>
+</div>
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-72 mx-auto">
+    <p>Hello World 72</p>
+</div>
+
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-screen mx-auto">
+    <p>Hello World Screen!</p>
+</div>
+<!--
+w-screen vs w-full :
+full = 100% container
+-->
+
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-min mx-auto">
+    <p>Hello World Min!</p>
+</div>
+
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-max mx-auto">
+    <p>Hello World Max!</p>
+</div>
+
+<div class="text-blue-700 text-center  p-8 my-8 bg-blue-200 w-[300px] mx-auto">
+    <p>Hello World 300px!</p>
+</div>
+
+<div class="flex items-end">
+    <div class="bg-red-200 w-[50px] h-12 mx-4"> height 12</div>
+    <div class="bg-red-200 w-[50px] h-24 mx-4"> height 24</div>
+    <div class="bg-red-200 w-[50px] h-32 mx-4"> height 32</div>
+    <div class="bg-red-200 w-[50px] h-40 mx-4"> height 40</div>
+
+</div>
+
+<!--
+برای استفاده از مینیموم و ماکسیموم در هایت باید داخل یک دیو دیگر با ارتفاع مشخص باشیم
+-->
+
+<div class="flex h-[500px] w-full bg-yellow-200">
+    <div class="max-h-full w-[50px] bg-blue-500  mx-4"> max-h-full</div>
+    <div class="h-[24px] w-[50px] bg-blue-500 mx-4"> 24px</div>
+    <div class="h-24 w-[50px] bg-blue-500 mx-4"> 24</div>
+    <div class="h-screen w-[50px] bg-blue-500 mx-4"> screen</div>
+
+</div>
+
+<hr class="mt-8 "/>
+<h1 class="text-2xl p-8">Positions in relative parent </h1>
+
+<div class="w-2/3 h-[500px] bg-orange-400 mx-auto relative">
+
+    <div class="bg-blue-900 w-[100px] h-[100px] m-4 bottom-0 left-0 absolute"> absolute bottom-0 left-0</div>
+    <div class="bg-blue-900 w-[100px] h-[100px] m-4 top-0 right-0 absolute"> absolute top-0 right-0</div>
+    <div class="bg-blue-900 w-[100px] h-[100px] m-4 top-1/2 right-1/2 absolute"> absolute top-1/2 right-1/2</div>
+
+</div>
+
+<div class="flex">
+    <div class="bg-purple-900 w-[200px] h-[200px] m-8 p-5 border-x-2 border-x-yellow-100 border-y-4 border-y-green-500 ">
+        Border
+    </div>
+
+    <div class="bg-purple-900 w-[200px] h-[200px] m-8 p-5 border-r-4">
+        Border
+    </div>
+    <div class="bg-purple-900 w-[200px] h-[200px] m-8 p-5 border-b-4 border-b-red-200">
+        Border
+    </div>
+
+    <div class="bg-purple-900 w-[200px] h-[200px] m-8 p-5 rounded-xl">
+        Border
+    </div>
+
+    <div class="bg-purple-900 w-[200px] h-[200px] m-8 p-5 rounded-full">
+        Border
+    </div>
+
+</div>
+
+<hr class="mt-8 "/>
+<h1 class="text-2xl p-8">Screen sizes</h1>
+
+<div class="bg-yellow-500 w-[300px] h-[300px] m-8 p-5 rounded-xl
+sm:bg-green-500
+md:bg-blue-500
+lg:bg-orange-500
+xl:bg-red-500
+">
+    Change the screen size to change color
+</div>
+
+<hr class="mt-8 "/>
+<h1 class="text-2xl p-8">Flex</h1>
+
+<!-- flex-row-->
+<!--
+In a flex container, the default behavior is to keep all items on a single line, which is why your boxes are getting smaller instead of wrapping to the next line. To allow the flex items to wrap onto the next line when they exceed the width of the container, you need to use the flex-wrap utility class provided by Tailwind CSS.
+-->
+<p>
+    flex flex-row -> single line horizontal
+</p>
+<p>
+    flex flex-col -> single line vertical
+</p>
+<p>  flex flex-wrap -> multi line</p>
+
+<div class="flex flex-wrap bg-white h-[500px] gap-4 items-center justify-around">
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 1
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 2
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 3
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 4
+    </div>
+
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 5
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px] order-5 ">
+        box 6
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 7
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 8
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px] order-3 ">
+        box 9
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 10
+    </div>
+
+
+</div>
+
+<hr class="mt-8 "/>
+<h1 class="text-2xl p-8">Grid</h1>
+<p>  داخل فلکس اگه جا کم بیاد آیتم ها جمع میشوند ولی داخل گرید آیتم ها جمع نمی شوند</p>
+<p>  همچنین امکان تعیین کردن تعداد ستون رو داریم</p>
+
+<div class="grid grid-cols-4 bg-white h-[500px] gap-4 items-center justify-around">
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 1
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 2
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 3
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 4
+    </div>
+
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 5
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px] order-5 ">
+        box 6
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 7
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 8
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px] order-3 ">
+        box 9
+    </div>
+
+    <div class="bg-pink-900 w-[200px] h-[200px]  ">
+        box 10
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

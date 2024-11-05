@@ -61,3 +61,5 @@ using command --watch : after every save above commands will run
 ```angular2html
 npm run watch
 ```
+
+generate css/styles.css file and folder 

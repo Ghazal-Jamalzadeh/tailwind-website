@@ -1,0 +1,18 @@
+font ---------------------------------------------------
+input.css
+@font-face {
+    font-family: 'iransans';
+    src: url("./font/IranSansWeb.ttf");
+}
+
+-----------------
+tailwind.config.js
+
+  theme: {
+    fontFamily : {
+      iransans : ["iransans"]
+    }
+  },
+
+سمت چپی مقدار دلخواهی هست که قراره توی کد ازش استفاده کنیم
+مقدار داخل ارایه همون مقداریه که توی فایل قبلی نوشتیم

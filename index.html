@@ -176,9 +176,54 @@ antialiased : نمایش بهتر فونت
                     <div class="py-5 border-b-4 border-gray-400 " data-target="panel-1">
                         tab 1
                     </div>
+
+                    <div class="py-5 border-b-4 border-gray-400 " data-target="panel-2">
+                        tab 2
+                    </div>
                 </div>
+
+
             </div>
 
+            <div class="container mx-auto" id="panels">
+
+                <!-- first panel -->
+                <div class="flex flex-col py-5 panel panel-1 md:flex-row-reverse md:space-x-7">
+
+                    <div class="flex justify-center w-full md:w-[200px]">
+                        <img src="images/img-5.jpg" class="relative  rounded-lg"/>
+                    </div>
+
+                    <div class="flex flex-col space-y-8 md:w-1/3">
+                        <h3 class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-right">عنوان دسته بندی</h3>
+                        <p class="text-center md:text-right my-10">متن دسته بندی</p>
+                        <div class="mx-auto md:mx-0 text-right my-10">
+                            <a class="px-6 py-3 border-2 border-[#fafafa] rounded-lg md:inline-flex hover:bg-white hover:text-black hover:border-2">بیشتر</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- second panel -->
+                <div class="flex flex-col py-5 panel panel-1 md:flex-row-reverse md:space-x-7 hidden ">
+
+                    <div class="flex justify-center md:w-1/2">
+                        <img src="images/img2.jpg" class="relative w-2/3 rounded-lg"/>
+                    </div>
+
+                    <div class="flex flex-col space-y-8 md:w-1/3">
+                        <h3 class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-right">عنوان دسته بندی</h3>
+                        <p class="text-center md:text-right">متن دسته بندی</p>
+                        <div class="mx-auto md:mx-0 text-right my-10">
+                            <a class="px-6 py-3 border-2 border-[#fafafa] rounded-lg md:inline-flex hover:bg-white hover:text-black hover:border-2">بیشتر</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </section>
 </div>
